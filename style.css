@@ -98,8 +98,8 @@ body::after {
 }
 
 .whatsapp { background: #25D366; }
-.whatsapp::before { background: #128C7E; }
-.whatsapp::after  { background: #075E54; }
+.whatsapp::before { background: #16d316; }
+.whatsapp::after  { background: #16d626; }
 
 .instagram {
   background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5);
