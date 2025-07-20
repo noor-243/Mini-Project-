@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 70vh;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+  overflow: hidden;
+}
+
+body::before, body::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(180px);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+body::before {
+  width: 300px;
+  height: 300px;
+  background: #ff00cc;
+  top: -80px;
+  left: -80px;
+}
+
+body::after {
+  width: 300px;
+  height: 300px;
+  background: #00ffff;
+  bottom: -150px;
+  right: -150px;
+}
+
+.icon-list {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+.icon-list li {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.icon-list li::before,
+.icon-list li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  opacity: 0;
+  z-index: 0;
+}
+
+.icon-list li:hover::before,
+.icon-list li:hover::after {
+  opacity: 1;
+}
+
+.icon-list li a {
+  color: white;
+  font-size: 36px;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.4s;
+}
+
+.icon-list li:hover a {
+  transform: scale(1.2);
+}
+
+.whatsapp { background: #25D366; }
+.whatsapp::before { background: #128C7E; }
+.whatsapp::after  { background: #075E54; }
+
+.instagram {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5);
+  border-radius: 20px;
+}
+.instagram a {
+  color: white;
+  font-size: 50px;
+  filter: drop-shadow(0 0 2px black);
+}
+
+.tiktok {
+  background: #000000;
+  border-radius: 20px;
+}
+.tiktok a {
+  color: #fff;
+  font-size: 50px;
+  text-shadow:
+    1px 1px 0 #25f4ee,
+    -1px -1px 0 #ff0050;
+}
+
+.snapchat {
+  background: #FFFC00;
+  border-radius: 20px;
+}
+.snapchat a {
+  color: black;
+  font-size: 50px;
+  filter: drop-shadow(1px 1px 0 white)
+          drop-shadow(-1px -1px 0 white)
+          drop-shadow(1px -1px 0 white)
+          drop-shadow(-1px 1px 0 white);
+}
+
+.pinterest { background: #E60023; }
+.pinterest::before { background: #ad081b; }
+.pinterest::after  { background: #bd081c; }
+
+.twitter { background: #1DA1F2; }
+.twitter::before { background: #0d8ddb; }
+.twitter::after  { background: #1a91da; }
+
+.linkedin { background: #0077B5; }
+.linkedin::before { background: #005983; }
+.linkedin::after  { background: #004471; }
+
+.github { background: #333333; }
+.github::before { background: #24292e; }
+.github::after  { background: #161b22; }
