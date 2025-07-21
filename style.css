@@ -140,10 +140,6 @@ body::after {
 .pinterest::before { background: #ad081b; }
 .pinterest::after  { background: #bd081c; }
 
-.twitter { background: #1DA1F2; }
-.twitter::before { background: #0d8ddb; }
-.twitter::after  { background: #1a91da; }
-
 .linkedin { background: #0077B5; }
 .linkedin::before { background: #005983; }
 .linkedin::after  { background: #004471; }
