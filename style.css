@@ -152,6 +152,3 @@ body::after {
 .github::before { background: #24292e; }
 .github::after  { background: #161b22; }
 
-.indrive { background: greenyellow; }
-.infrive::before { background-color: #16d316; }
-.infrive::after { background-color: #16d626; }
