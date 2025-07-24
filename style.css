@@ -130,10 +130,10 @@ body::after {
 .snapchat a {
   color: black;
   font-size: 50px;
-  filter: drop-shadow(1px 1px 0 white)
-          drop-shadow(-1px -1px 0 white)
-          drop-shadow(1px -1px 0 white)
-          drop-shadow(-1px 1px 0 white);
+  filter: drop-shadow(1px 1px 0 rgb(5, 5, 5))
+          drop-shadow(-1px -1px 0 rgb(8, 8, 8))
+          drop-shadow(1px -1px 0 rgb(2, 2, 2))
+          drop-shadow(-1px 1px 0 rgb(10, 10, 10));
 }
 
 .pinterest { background: #E60023; }
